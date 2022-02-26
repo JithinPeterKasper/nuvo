@@ -10,7 +10,6 @@ const api = new API();
 const Main = () => {
   const [product, setProducts] = useState([]);
   const [selected, setSelected] = useState(null);
-  
 
   const limit = 3;
   useEffect(() => {
@@ -20,8 +19,6 @@ const Main = () => {
       console.log(response.data);
     });
   }, []);
-
-  
 
   return (
     <div>
@@ -39,10 +36,15 @@ const Main = () => {
             //   <p>{products.title}</p>
             //   {arrow ? <img src={ArrowLeft}/> : <img src={ArrowRight}/>}
             // </div>
-            <Select key={products.id} products={products} selected={selected} setSelected={setSelected}/>
+            <Select
+              key={products.id}
+              products={products}
+              selected={selected}
+              setSelected={setSelected}
+            />
           ))}
         </div>
-      <div className="details">
+        <div className="details">
           {product.length > 0 && (
             <>
               {product.map((products) => (
@@ -55,7 +57,7 @@ const Main = () => {
             </>
           )}
         </div>
-        </div>
+      </div>
     </div>
   );
 };

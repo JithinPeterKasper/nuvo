@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Ratings from "./Ratings"
+import Ratings from "./Ratings";
 
 const Details = ({ products, selected }) => {
   const [pDetails, sDetails] = useState("");
@@ -15,7 +15,7 @@ const Details = ({ products, selected }) => {
     <div>
       <div className={pDetails} key={products.id}>
         <h2>{products.price}</h2>
-       <h4>{products.description}</h4>
+        <h4>{products.description}</h4>
         <Ratings key={products.id} rating={products.rating} />
         <button>Add to Cart</button>
       </div>
