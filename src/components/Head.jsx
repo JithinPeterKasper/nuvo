@@ -1,5 +1,5 @@
 import React from "react";
-import "../assests/style.css";
+// import "../assests/style.css";
 
 const Head = () => {
   return (

@@ -1,0 +1,130 @@
+body {
+  background-color: #e5e5e4;
+  text-align: center;
+  margin: 0;
+}
+
+.header h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.header p {
+  padding: 10px 35%;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select .productImg {
+  width: 35%;
+  padding: 5px 0px;
+}
+
+.select p {
+  padding: 50px;
+}
+
+.select img {
+  width: 18%;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.items .info {
+  width: 45%;
+}
+
+.items .details {
+  width: 53%;
+}
+
+#root .items .details {
+  background: white;
+  padding-left: 10%;
+}
+
+.star {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.star img {
+  width: 10%;
+}
+
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0%;
+  }
+  .items .main {
+    width: 100%;
+  }
+  .items .info {
+    width: 100%;
+  }
+  .items .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #root .items .details {
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .header p {
+    padding: 0px 10%;
+  }
+  .details .button {
+    margin: 130px 50px 0px 85px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  #root .items .details {
+    background: white;
+    padding-left: 5%;
+  }
+  .items .main {
+    width: 80%;
+  }
+  .items .info {
+    width: 95%;
+  }
+  .items .details {
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
